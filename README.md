@@ -1,4 +1,7 @@
 # webpack-backbone
+
+base on [neromaycry/webpack-backbone](https://github.com/neromaycry/webpack-backbone)
+
 这是一个webpack和Backbone相结合的模板项目。
 
 这个项目使得开发者可以模块化的使用backbone进行开发。目前实现了项目的快速构建和打包,对View进行了一定的封装。
@@ -18,9 +21,5 @@ npm start
 
 ###### 打包：
 ```
-npm build
+npm run build
 ```
-
-
-
-
