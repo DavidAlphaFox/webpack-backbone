@@ -1,4 +1,5 @@
-var Backbone = require('Backbone');
+require("../scss/a.scss");
+var Backbone = require('backbone');
 var _ = require('underscore');
 var BaseView = require('../common/BaseView');
 

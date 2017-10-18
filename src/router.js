@@ -1,4 +1,4 @@
-var Backbone = require('Backbone');
+var Backbone = require('backbone');
 var HomeView = require('./home/view');
 var StoryView= require('./story/view');
 
