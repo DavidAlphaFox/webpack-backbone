@@ -1,6 +1,6 @@
-import "./scss/index.scss"
-import Backbone from "backbone"
-import AppRouter from "./router"
+require("./scss/index.scss")
+Backbone = require "backbone"
+SummaryView = require "./views/summary-view.coffee"
 
-window.router = new AppRouter()
-Backbone.history.start()
+window.App = window.App || {}
+window.App.SummaryView = SummaryView
