@@ -5,27 +5,21 @@
 		<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 		<meta viewport="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-		<meta name="csrf-token" content="{{_csrf_token}}">
-		<title>{{title}}</title>
-		{{> assets/_css.html}}
-		{{> assets/_scripts.html}}
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<title>test</title>
 	</head>
 
-  <body class="no-skin">
-    {{> layout/_navbar.html}}
-		<div class="main-container ace-save-state" id="main-container">
-			<!-- 
-			{{> layout/_sidebar.html}}
-		 	-->
-			<div class="main-content">
-        <div class="main-content-inner">
-            {{{content}}}
-			  </div>
-      </div><!-- /.main-content -->
-			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-			</a>
-	 </div>
-	  
+	<body>
+		<div id="wrapper">
+
+		</div>
+	 <script type="text/template" id="tpl-infobox">
+		<li><%= infoboxAmount %><li>
+	 </script>
+	 <script type="text/template" id="tpl-summary">
+		<ul>
+			<%= infoboxA %>
+		</ul>
+	</script>
 	</body>
 </html>

@@ -1,7 +1,8 @@
-Backbone = require "backbone"
-_ = require "underscore"
-InfoboxModel = require "../models/infobox-model.coffee"
-InfoboxPartialsView = require  "./partials/infobox-view.coffee"
+import * as Backbone from "backbone"
+import * as _ from 'underscore'
+
+import InfoboxModel from  "../models/infobox-model.coffee"
+import InfoboxPartialsView from "./partials/infobox-view.coffee"
 
 SummaryView = Backbone.View.extend
   el: "#wrapper"
@@ -26,5 +27,4 @@ SummaryView = Backbone.View.extend
     ))
     @
 
-
-module.exports = SummaryView
+export default SummaryView

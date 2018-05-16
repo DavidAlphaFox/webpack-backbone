@@ -1,5 +1,5 @@
-Backbone = require "backbone"
-_ = require "underscore"
+import * as Backbone from "backbone"
+import * as _ from 'underscore'
 
 InfoboxParialsView = Backbone.View.extend
   template: _.template($('#tpl-infobox').html()),
@@ -10,4 +10,4 @@ InfoboxParialsView = Backbone.View.extend
     @el = @template(@model.toJSON())
     @
 
-module.exports = InfoboxParialsView
+export default InfoboxParialsView

@@ -1,4 +1,5 @@
-Backbone = require "backbone"
+import * as Backbone from "backbone"
+import * as _ from 'underscore'
 
 InfoboxModel = Backbone.Model.extend
   defaults:
@@ -7,4 +8,4 @@ InfoboxModel = Backbone.Model.extend
     "infoboxAmount": "1234.00"
     "infoboxPercent": "4"
 
-module.exports = InfoboxModel
+export default InfoboxModel
