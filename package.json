@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --inline",
-    "build": "webpack"
+    "build": "node ./build/build.js"
   },
   "author": "Joey Kwok",
   "license": "ISC",
@@ -31,6 +31,9 @@
     "node-sass": "^4.5.3",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "postcss-loader": "^2.0.8",
+    "rollup": "^0.59.0",
+    "rollup-plugin-coffee-script": "^2.0.0",
+    "rollup-plugin-coffee2": "^0.1.15",
     "sass-loader": "^6.0.6",
     "sass-resources-loader": "^1.3.1",
     "scss-loader": "0.0.1",

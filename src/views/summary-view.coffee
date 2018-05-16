@@ -1,3 +1,4 @@
+import $ from 'jquery'
 import * as Backbone from "backbone"
 import * as _ from 'underscore'
 
@@ -13,7 +14,7 @@ SummaryView = Backbone.View.extend
       throw new Error("Subviews must be a Backbone.View");  
     @subviews.push(view);
     return view
-  removeSubviews: ()->
+  removeSubviews: ->
     @subviews = []
     @
   initialize: ->
