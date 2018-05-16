@@ -3,7 +3,8 @@
 const fs = require('fs');
 const del = require('del');
 const rollup = require('rollup');
-const coffee =require('rollup-plugin-coffee-script');
+const coffee = require('rollup-plugin-coffee-script');
+const uglify = require('rollup-plugin-uglify');
 
 
 let promise = Promise.resolve();
@@ -25,7 +26,8 @@ promise = promise.then(() =>
     },
     external: external,
     plugins: [
-      coffee()    
+      coffee(),
+      uglify()   
     ]
   }).then(bundle => bundle.write({
     file: 'dist/index.js',
